@@ -44,7 +44,7 @@ jobs:                       # [필수] 작업(Job) 집합 정의
           # 당신 프로젝트 기준 EB 설정
           application_name: springwebaws           # [필수] EB Application 이름
           environment_name: springwebaws-env       # [필수] EB Environment 이름
-          version_label: "springwebaws-${{ steps.time.outputs.formattedTime }}"
+          version_label: "springweb-${{ steps.time.outputs.formattedTime }}"
           # [선택] 버전 이름 (Timestamp 포함)
           deployment_package: "./build/libs/${{ env.ARTIFACT }}"
           # [필수] 실제 배포할 JAR 파일 경로
